@@ -2,26 +2,26 @@ pl:
   plugins:
     refinerycms_news:
       title: Aktualności
-      description: Provides a simple news section
+      description: Prosty system do dodawania aktualności
   admin:
     news_items:
       news_item:
         view_live_html: "View this news item live <br/><em>(opens in a new window)</em>"
-        edit: "Edit this news item"
-        delete: "Remove this news item forever"
+        edit: "Edytuj ten wpis"
+        delete: "Usuń ten wpis"
         published: Opublikowano
       index:
-        actions: Actions
+        actions: Akcje
         create: "Doddaj nowa"
-        news_item: News
+        news_item: Aktualności
         no_items: "Sorry, no results found."
         no_items_yet: 'There are no news items yet. Click "Add News Item" to add your first news item.'
   news_items:
     show:
-      back_to_index: "Back to all news"
-      published: Published
+      back_to_index: "Wróć do aktulaności"
+      published: Opublikowano
     recent_posts:
-      recent_posts: Recent Posts
+      recent_posts: Ostatnio dodane
     index:
       published: Opublikowano
       read_more: Czytaj więcej
@@ -29,10 +29,10 @@ pl:
   activerecord:
     attributes:
       news_item:
-        title: Title
-        body: Body
-        publish_date: Publish date
-        external_url: External URL
+        title: Tytuł
+        body: Zawartość
+        publish_date: Data publikacji
+        external_url: Zewnętrzny URL
         image: &image Image
     models:
       news_item: News Item

@@ -20,7 +20,7 @@ class EventsController < ApplicationController
 protected
 
   def find_all_events
-    @events = Event.find(:all, :order => "position ASC")
+    @events = Event.find(:all, :order => "date DESC")
   end
 
   def find_page
